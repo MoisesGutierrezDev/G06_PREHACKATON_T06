@@ -1,10 +1,8 @@
-module vallegrande.edu.pe.sgec {
-
+module com.example.sgec {
     requires javafx.controls;
-    requires java.sql;
+    requires javafx.fxml;
 
-    exports vallegrande.edu.pe.sgec;
-    exports vallegrande.edu.pe.sgec.controller;
-    exports vallegrande.edu.pe.sgec.model;
-    exports vallegrande.edu.pe.sgec.view;
+
+    opens com.example.sgec to javafx.fxml;
+    exports com.example.sgec;
 }
